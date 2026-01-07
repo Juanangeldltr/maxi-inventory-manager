@@ -65,3 +65,20 @@
 ### Typography
 - **Headings:** Montserrat or Arial (Bold)
 - **Body:** Open Sans or Helvetica (Regular)
+
+---
+## Website Sitemap (Navigation Structure)
+
+Based on the brand identity, the navigation bar will include:
+
+1.  **Inicio (Home):** General overview and welcome.
+2.  **Productos (Products):** Main catalog (Pharmacy and Accessories).
+3.  **Ofertas (Offers):** Special discounts and seasonal promotions.
+4.  **Contacto (Contact):** WhatsApp link and clinic location.
+5.  **Sobre nosotros (About Us):** The clinic's history and family values.
+6.  **Cuenta (Account):** Client login and order history.
+
+**Key Icons:**
+- Shopping Cart (Direct access to checkout).
+- Location (Link to Google Maps/Aguascalientes branch).
+- Profile/Account (User management).
