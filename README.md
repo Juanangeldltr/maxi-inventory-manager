@@ -1,29 +1,26 @@
-# Veterinary E-commerce & Management System
+# Maxi Inventory Manager
 
-Professional project developed for a local veterinary clinic in Aguascalientes.
+Professional inventory management and Point of Sale (POS) system developed for **MAXI VETERINARIA**.
 
-## Project Goal
-Develop a comprehensive web application to manage real-time inventory, Point of Sale (POS) for physical store sales, and an online store with automated fiscal invoicing.
+## Project Overview
+A robust **offline-first** desktop application built with **Tauri**. It replaces legacy software with a high-performance interface to manage sales, inventory, and automated SAT invoicing. The system is designed to work without an internet connection, syncing fiscal data only when needed.
 
-## Tech Stack & Justification
-*We selected these tools to ensure a professional, secure, and cost-effective solution:*
+## Key Features
+- **Integrated POS:** Full offline operations including stock management and real-time sales tracking.
+- **Local Database:** Powered by **SQLite** for secure, fast, and serverless data storage directly on the clinic's computer.
+- **Role-Based Access Control (RBAC):** Customizable user permissions. Admins can restrict access to profit reports, cost editing, and sensitive data.
+- **Fiscal & Print Engine:** - Automated SAT CFDI 4.0 invoicing (Queue-based: syncs when internet is available).
+  - Thermal ticket printing and "Purchase Order" report generation.
+- **Smart Cost Automation:** Automatic "Minimum Purchase Price" updates based on the latest stock reception.
 
-- **React.js:** For a high-performance, responsive UI that handles complex state management (like real-time inventory updates).
-- **Firebase:** To provide real-time data sync and secure cloud storage with $0 initial maintenance costs.
-- **Mercado Pago API:** To ensure secure transactions and seamless integration with existing **Point Smart** hardware.
-- **Mexican e-invoicing API:** (Facturama/Factura.com) To automate tax compliance and professional billing for clients.
+## Tech Stack
+- **Frontend:** React.js (User Interface).
+- **Desktop Framework:** Tauri (Rust-based, lightweight and secure).
+- **Database:** SQLite (Local storage).
+- **Styling:** CSS3 / Tailwind (Clean and professional UX).
 
-## Business Logic & Features
-* **Omnichannel Inventory:** Real-time synchronization between the physical warehouse and the online store.
-* **Smart Delivery Logistics:** * **Same-Day Delivery:** Available for orders placed between **5:00 AM and 3:00 PM** (Priority fee applies).
-    * **Standard Delivery:** Orders after 3:00 PM are scheduled for the next business day.
-* **Cost Efficiency:** Designed to run on free-tier cloud services, eliminating legacy software license fees.
+## Architecture Approach
+The application follows a **Local-First** architecture. This ensures that the veterinary clinic can continue its daily operations (sales, inventory lookups, and reports) even during internet outages, maintaining 100% uptime for core business processes.
 
-## Current Status: Documentation & Requirements Phase
-- [x] Repository initialization.
-- [x] Folder structure setup.
-- [x] Tech Stack justification.
-- [ ] Business requirements definition.
-- [ ] Inventory data structuring (`products.json`).
-- [ ] User stories and UI/UX design.
-
+---
+*Status: Currently in Documentation & Requirement Analysis Phase.*
