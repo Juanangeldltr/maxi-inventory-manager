@@ -1,19 +1,18 @@
-# Propuesta: Sistema Digital para la Veterinaria
-## 1. Ahorro Directo (Adiós a las rentas):
+# Project Proposal: Maxi Inventory Manager
 
-Actualmente, muchos sistemas como Microchip cobran rentas o licencias caras. El sistema que estoy haciendo es desarrollo propio, por lo que el costo de mantenimiento será $0.
-Usaremos la computadora de la oficina, su terminal Point Smart y el lector de códigos que ya tienen. No hay que gastar en equipo nuevo.
+## 1. Direct Savings & Independence
+The current systems (like Microchip) often involve expensive licenses or recurring fees. This custom-developed solution will have **$0 maintenance costs** for licenses. The system will run locally on existing hardware, utilizing the current Point Smart terminal and barcode scanners.
 
-## 2. Tienda Online y Física Unidas:
+## 2. Local-First Reliability (Offline Operations)
+Unlike web-based systems, this application will be built using **Tauri and SQLite**. This means:
+- **100% Uptime:** The clinic can sell and manage stock even if the internet provider fails.
+- **Speed:** Instant response times as data doesn't need to travel to a cloud server.
 
-Todo estará conectado. Si se vende un champú en la veterinaria, el sistema lo quita automáticamente de la página web. Así nunca venderemos algo que no tengamos en existencia.
-Podrán checar las ventas del día desde su celular sin tener que estar físicamente en el local.
+## 3. Unified Management (The "Single Window" Strategy)
+We will eliminate the inefficiency of switching between three different windows for sales, purchases, and reception. All core business logic will be integrated into a single, streamlined React interface.
 
-## 3. Entregas Express (Nuevos ingresos):
+## 4. Automated Fiscal Integration
+The system will handle **SAT CFDI 4.0 invoicing** directly. By automating the fetching of costs from the latest purchase records and integrating a fiscal API, we reduce human error and save time during the checkout process.
 
-Vamos a implementar una regla de "Urgencia": Si un cliente compra antes de las 3:00 PM, puede pedir entrega para hoy mismo pagando un cargo extra.
-Si compran después de las 3:00 PM, el sistema les dirá que su pedido llega mañana. Esto nos da orden y dinero extra por las entregas rápidas.
-
-## 4. Pagos Seguros:
-
-Las ventas por internet se cobrarán por Mercado Pago (igual que su terminal Point). El dinero es rastreable y cae directo a la cuenta, evitando errores al cobrar.
+## 5. Security & User Control
+A role-based login system will ensure that only authorized personnel can access sensitive financial reports or modify product costs, providing the owners with full control over their business data.
